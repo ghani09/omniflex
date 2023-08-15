@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>OmniFlex || Home</title>
+    
     <meta name="robots" content="noindex, follow" />
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -93,7 +94,7 @@
                             <h2 class="title" data-aos="fade-up" data-aos-delay="800">We transform ideas into technology</h2>
                             <p data-aos="fade-up" data-aos-delay="900">We provide the most responsive and functional IT design for companies and businesses worldwide.</p>
                             <div class="hero-btn" data-aos="fade-up" data-aos-delay="1000">
-                                <a class="btn" href="about.html">Read More</a>
+                                <a class="btn" href="about.php">Read More</a>
                             </div>
                         </div>
                         <!-- Hero Content End -->

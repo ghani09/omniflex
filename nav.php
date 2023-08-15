@@ -16,7 +16,7 @@
                 <div class="header-wrap">
 
                     <div class="header-logo">
-                        <a href="index.php"><img src="" alt=""></a>
+                        <a href="index.php"><img src="assets\images\logo.png" alt=""></a>
                     </div>
 
                     <div class="header-menu d-none d-lg-block">

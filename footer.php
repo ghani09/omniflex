@@ -9,7 +9,7 @@
                         <div class="col-lg-3 col-sm-6">
                             <!-- Footer Widget Start -->
                             <div class="footer-widget-about">
-                                <a class="footer-logo" href="index.php"><img src="" alt="Logo"></a>
+                                <a class="footer-logo" href="index.php"><img src="assets\images\logo.png" alt="Logo"></a>
                                 <p>Accelerate innovation with world-class tech teams We’ll match you to an entire remote team of incredible freelance talent.</p>
                                 <div class="footer-social">
                                     <ul class="social">
