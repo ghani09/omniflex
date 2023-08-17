@@ -21,21 +21,24 @@
 
                     <div class="header-menu d-none d-lg-block">
                         <ul class="main-menu">
-                            <li class="active-menu">
-                                <a href="index.php">Home</a>
+                        
+                        <li class="<?php echo (basename($_SERVER['SCRIPT_NAME']) == "index.php" ? "active-menu" : "");?>">
+    <a href="index.php">Home</a>
+</li>
+
                                 <!-- <ul class="sub-menu">
                                     <li class="active"><a href="index.">Home Main</a></li>
                                   
                                 </ul> -->
                             </li>
-                            <li>
+                            <li class="<?php echo (basename($_SERVER['SCRIPT_NAME']) == "about.php" ? "active-menu" : "");?>">
                                 <a href="about.php">Aboute Us</a>
                             </li>
-                            <li><a href="service.php">Services</a>
+                            <li class="<?php echo (basename($_SERVER['SCRIPT_NAME']) == "service.php" ? "active-menu" : "");?>"><a href="service.php">Services</a>
                             
                             </li>
                        
-                            <li><a href="contact.php">Contact</a></li>
+                            <li class="<?php echo (basename($_SERVER['SCRIPT_NAME']) == "contact.php" ? "active-menu" : "");?>"><a href="contact.php">Contact</a></li>
                         </ul>
                     </div>
 

@@ -116,7 +116,7 @@
                                         <img src="assets/images/ser-icon9.png" alt="">
                                     </div>
                                     <div class="choose-us-content">
-                                        <h3 class="title"><a href="#">IT Consultancy</a></h3>
+                                        <h3 class="title"><a href="it-solutions.php">IT Consultancy</a></h3>
                                         <p>Accelerate innovation with world-class tech teams We’ll match you to an entire.</p>
                                     </div>
                                 </div>
@@ -129,7 +129,7 @@
                                         <img src="assets/images/counter-3.png" alt="">
                                     </div>
                                     <div class="choose-us-content">
-                                        <h3 class="title"><a href="#">Data Science</a></h3>
+                                        <h3 class="title"><a href="it-infrutructure.php">Data Science</a></h3>
                                         <p>Accelerate innovation with world-class tech teams We’ll match you to an entire.</p>
                                     </div>
                                 </div>
@@ -155,7 +155,7 @@
                                         <img src="assets/images/ser-icon12.png" alt="">
                                     </div>
                                     <div class="choose-us-content">
-                                        <h3 class="title"><a href="#">blockchain System</a></h3>
+                                        <h3 class="title"><a href="it-management.php">blockchain System</a></h3>
                                         <p>Accelerate innovation with world-class tech teams We’ll match you to an entire.</p>
                                     </div>
                                 </div>
@@ -168,7 +168,7 @@
                                         <img src="assets/images/counter-1.png" alt="">
                                     </div>
                                     <div class="choose-us-content">
-                                        <h3 class="title"><a href="#">IT Infrustructure </a></h3>
+                                        <h3 class="title"><a href="it-infrutructure.php">IT Infrustructure </a></h3>
                                         <p>Accelerate innovation with world-class tech teams We’ll match you to an entire.</p>
                                     </div>
                                 </div>
@@ -181,7 +181,7 @@
                                         <img src="assets/images/counter-2.png" alt="">
                                     </div>
                                     <div class="choose-us-content">
-                                        <h3 class="title"><a href="#">Data Managment</a></h3>
+                                        <h3 class="title"><a href="it-management.php">Data Managment</a></h3>
                                         <p>Accelerate innovation with world-class tech teams We’ll match you to an entire.</p>
                                     </div>
                                 </div>
@@ -194,7 +194,7 @@
                                         <img src="assets/images/ser-icon21.png" alt="">
                                     </div>
                                     <div class="choose-us-content">
-                                        <h3 class="title"><a href="#">IT Managment</a></h3>
+                                        <h3 class="title"><a href="it-management.php">IT Managment</a></h3>
                                         <p>Accelerate innovation with world-class tech teams We’ll match you to an entire.</p>
                                     </div>
                                 </div>
@@ -207,7 +207,7 @@
                                         <img src="assets/images/ser-icon22.png" alt="">
                                     </div>
                                     <div class="choose-us-content">
-                                        <h3 class="title"><a href="#">Data securet</a></h3>
+                                        <h3 class="title"><a href="it-security.php">Data securet</a></h3>
                                         <p>Accelerate innovation with world-class tech teams We’ll match you to an entire.</p>
                                     </div>
                                 </div>

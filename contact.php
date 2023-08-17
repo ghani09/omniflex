@@ -1,3 +1,145 @@
+<?php 
+
+if(isset($_POST["submit"])){
+
+    $userName = $_POST["user_name"];
+    $userEmail=$_POST["user_email"];
+   
+    $phone = $_POST["user_contact"] ;
+    $messege=$_POST["user_msg"];
+  
+    // Sanitize and escape user inputs
+    $userName = $conn->real_escape_string($_POST["user_name"]);
+    $userEmail = $conn->real_escape_string($_POST["user_email"]);
+    $phone = $conn->real_escape_string($_POST["user_contact"]);
+    $message = $conn->real_escape_string($_POST["user_msg"]);
+
+    // SQL query to insert data into the table
+    $sql = "INSERT INTO user_data (name, email, phone, message) VALUES ('$userName', '$userEmail', '$phone', '$message')";
+
+    if ($conn->query($sql) === TRUE) {
+        $to = 'skghani9999@gmail.com';
+  $subject ="WebEnquiry-#".rand(1000,9000)."" ;
+  $fromName =  "".$userName."";
+  $from = "".$userEmail."";
+   
+  $body = '  
+ 
+      <div style="margin: 50px; font-family: arial, sans-serif; text-align: left; font-size:16px;">
+      
+          <p><b>Dear</b> Prospect,</p>
+          <p>Please find attached the Enquiry details as per the details below:</p>
+        
+        <section style="padding:6px; border:1px solid black;border-radius:12px; width: 60%;">
+        
+        
+        <table style="border-collapse: collapse; width: 100% ; font-size:16px; ">
+        <tr  style="background-color: #ffff;">
+          <th style="border: 1px solid #dddddd; padding: 8px;">Name</th>
+          <td style="border: 1px solid #dddddd; padding: 8px;">'.$userName.'</td> 
+        </tr>
+        <tr  style="background-color: #dddddd;">
+          <th style="border: 1px solid #dddddd; padding: 8px;">Phone</th>
+          <td style="border: 1px solid #dddddd; padding: 8px;">'.$phone.' </td>    
+        </tr>
+        <tr  style="background-color: #ffff;">
+          <th style="border: 1px solid #dddddd; padding: 8px;">Email</th>
+          <td style="border: 1px solid #dddddd; padding: 8px;">'.$userEmail.' </td>
+        </tr>
+        <tr  style="background-color: #dddddd;">
+       
+          <th style="border: 1px solid #dddddd; padding: 8px;">Subject</th>
+          <td style="border: 1px solid #dddddd; padding: 8px;">'.$messege. '</td> 
+        </tr>
+       
+        </table>
+        </section>
+        <p> Regards </p><br>
+        <p>Admin</p>
+        </div>';
+             
+
+
+     // Thanks Return Mail Details Ends 
+    
+    
+    // Set content-type header for sending HTML email 
+    $headers = "MIME-Version: 1.0" . "\r\n"; 
+    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n"; 
+     
+    // Additional headers 
+    $headers .= 'From: '.$fromName.'<'.$from.'>' . "\r\n"; 
+    // $headers .= 'Cc: welcome2@example.com' . "\r\n"; 
+  //  $headers .= 'Bcc:gafoorbasha.shaik@monosage.com' . "\r\n"; 
+     
+    // Send email 
+    if(mail($to, $subject, $body, $headers))
+    { 
+        //success
+        
+        $customerReplay = '
+        <div style="padding:8px;line-height: 1.4;">
+            <font face="arial">
+              Hi  <b>'.$userName.'</b>,
+              <br><br>
+            
+              We thank you very much for your interest in <b>Omniflex</b>. We have noted down your contact details.
+            <br><br>
+              We are keen to discuss & understand your requirements.  
+               
+            <br><br>
+              Also, if you like to have more information please contact us  at support@Omniflex.com  and we would be glad to provide the same.
+            <br><br>
+              Thanking you
+            <br><br>
+              Customer Engagement Team
+            <br><br>
+             <b>Omniflex </b>
+            </font>
+        </div>
+        ';
+        
+        $toOne = $userEmail ;
+        
+        $subjectOne = 'Thanks for contacting us';
+        
+        $headersOne = "MIME-Version: 1.0" . "\r\n"; 
+        $headersOne .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+        $headersOne .= 'From:skghani9999@gmail.com' . "\r\n";
+        
+        mail($toOne, $subjectOne, $customerReplay, $headersOne);
+  
+        
+
+
+         echo '<script language="javascript">';
+      
+        echo 'window.location.href="thanks.php";';
+        echo '</script>';
+      
+    }
+  }
+else{
+   echo '0'; 
+}
+
+   
+
+    // Close the database connection
+    $conn->close();
+}
+?>
+
+
+
+
+?>
+
+
+
+
+
+
 <!doctype html>
 <html class="no-js" lang="en">
 
@@ -170,40 +312,40 @@
                                         <span class="sub-title"> request a quote</span>
                                         <h3 class="title">How May We Help You!</h3>
                                     </div>
-                                    <form action="#">
+                                    <form action="" method = "post">
                                         <div class="row">
                                             <div class="col-sm-6">
                                                 <!-- Single Form Start -->
                                                 <div class="single-form">
-                                                    <input type="text" placeholder="Name *">
+                                                    <input type="text" name="user_name" placeholder="Name *">
                                                 </div>
                                                 <!-- Single Form End -->
                                             </div>
                                             <div class="col-sm-6">
                                                 <!-- Single Form Start -->
                                                 <div class="single-form">
-                                                    <input type="email" placeholder="Email *">
+                                                    <input type="email"  name="user_email" placeholder="Email *" >
                                                 </div>
                                                 <!-- Single Form End -->
                                             </div>
                                             <div class="col-sm-12">
                                                 <!-- Single Form Start -->
                                                 <div class="single-form">
-                                                    <input type="text" placeholder="Subject *">
+                                                    <input type="text" name="user_contact"placeholder="Phone Number *">
                                                 </div>
                                                 <!-- Single Form End -->
                                             </div>
                                             <div class="col-sm-12">
                                                 <!-- Single Form Start -->
                                                 <div class="single-form">
-                                                    <textarea placeholder="Write A Message"></textarea>
+                                                    <textarea placeholder="Write A Message" name="user_msg"></textarea>
                                                 </div>
                                                 <!-- Single Form End -->
                                             </div>
                                             <div class="col-sm-12">
                                                 <!--  Single Form Start -->
                                                 <div class="form-btn">
-                                                    <button class="btn" type="submit">Send Message</button>
+                                                    <button class="btn"  name="sumbit" type="submit">Send Message</button>
                                                 </div>
                                                 <!--  Single Form End -->
                                             </div>
