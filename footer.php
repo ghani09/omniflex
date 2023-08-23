@@ -65,7 +65,7 @@
                                                 <i class="flaticon-phone-call"></i>
                                             </div>
                                             <div class="info-text">
-                                                <span><a href="#">+91 458 654 528</a></span>
+                                                <span><a href="#">469-333-6998</a></span>
                                             </div>
                                         </li>
                                         <li>
@@ -81,7 +81,11 @@
                                                 <i class="flaticon-pin"></i>
                                             </div>
                                             <div class="info-text">
-                                                <span>60 East 65th Street, NY</span>
+                                                <span>OmniFlex Consulting LLC.
+                                                        1910 Pacific Ave.
+                                                        2000-1398.
+                                                        Dallas.TX-75201
+                                                </span>
                                             </div>
                                         </li>
                                     </ul>
@@ -102,7 +106,7 @@
                             <div class="col-lg-12">
                                 <!-- Footer Copyright Text Start -->
                                 <div class="copyright-text text-center">
-                                    <p>© Copyrights 2022 techwix All rights reserved. </p>
+                                    <p>© Copyrights 2023 OmniFlex All rights reserved. </p>
                                 </div>
                                 <!-- Footer Copyright Text End -->
                             </div>
